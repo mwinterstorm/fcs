@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Feijoa - Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* actual colour from figma file below, had to lighten to match video */
+            /* background-color: #241F55;  */
+            background-color: rgb(40, 35, 90);
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 3.5vw;
+            margin-bottom: 0.2vw;
+            color: #00FF00;
+            font-family: sans-serif;
+            letter-spacing: -3px;
+            font-weight: 400;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 2.1vw;
+            margin-bottom: 5vw;
+            color: #FFFFF5;
+            font-family: sans-serif;
+            font-weight: 300;
+            letter-spacing: -2px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+            display: block;
+            clip-path: inset(40% 0 40% 0);
+            margin: 0;
+            padding: 0;
+            max-height: 800px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10dvh;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+
+            h3 {
+                letter-spacing: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video autoplay muted>
+            <source src="opening_movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Feijoa</h1>
+        <h3>Round up all your Feijoas starting International Feijoa day - coming soon!</h3>
+    </div>
+</body>
+
+</html>
